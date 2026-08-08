@@ -1,14 +1,30 @@
 # مؤسسة فرسان التعافي (Forsan Eltaafyوظبط)
 
-تطبيق Flutter للدعم والمساندة
+تطبيق Flutter للدعم والمساندة - جاهز للنشر على App Store 🚀
 
 ## 📱 معلومات التطبيق
 
 - **الاسم**: مؤسسة فرسان التعافي
-- **Bundle ID**: `com.mored.forsaneltaafy`
+- **Bundle ID**: `com.mored.forsaneltaafyوظبط`
+- **Team ID**: `84M47YB8XR`
 - **الإصدار**: 1.0.0 (Build 11)
 - **Min iOS**: 13.0
-- **Target Platforms**: iOS & Android
+- **المنصات**: iPhone + iPad
+- **GitHub**: https://github.com/KeroMored/forsanIOS
+
+## ⚠️ مهم: للبناء على CodeMagic
+
+إذا كنت تستخدم **CodeMagic CI/CD**، **يجب** قراءة هذا الدليل أولاً:
+
+### 📖 [CODEMAGIC_SETUP_GUIDE.md](CODEMAGIC_SETUP_GUIDE.md) ← ابدأ من هنا!
+
+هذا الدليل الشامل يحل جميع مشاكل Code Signing ويشرح:
+- ✅ كيفية إنشاء Certificates & Provisioning Profiles في Apple Developer
+- ✅ كيفية رفعها على CodeMagic
+- ✅ كيفية ربط App Store Connect API
+- ✅ حل مشكلة "No valid code signing certificates were found"
+
+**بدون هذه الخطوات، البيلد على CodeMagic سيفشل!**
 
 ## 🚀 البدء السريع
 
@@ -37,7 +53,7 @@ flutter run
 - `shared_preferences`: ^2.2.2
 - `flutter_screenutil`: ^5.9.3
 - `url_launcher`: ^6.2.6
-- `font_awesome_flutter`: ^10.7.0
+- `font_awesome_flutter`: ^11.0.0 (محدث!)
 - `flutter_phone_direct_caller`: ^2.1.0
 - `youtube_player_flutter`: ^9.1.3
 - `connectivity_plus`: ^6.0.3
@@ -51,15 +67,30 @@ flutter run
 
 تم تجهيز المشروع بالكامل للرفع على App Store. راجع الملفات التالية:
 
-### 📖 أدلة الرفع
-1. **[IOS_DEPLOYMENT_QUICK_START.md](IOS_DEPLOYMENT_QUICK_START.md)** - دليل البدء السريع (ابدأ من هنا!)
-2. **[APP_STORE_DEPLOYMENT.md](APP_STORE_DEPLOYMENT.md)** - دليل مفصل خطوة بخطوة
-3. **[APP_STORE_CHECKLIST.md](APP_STORE_CHECKLIST.md)** - قائمة التحقق الكاملة
-4. **[SCREENSHOTS_GUIDE.md](SCREENSHOTS_GUIDE.md)** - دليل إنشاء Screenshots
-5. **[APP_STORE_ASSETS_REQUIREMENTS.md](APP_STORE_ASSETS_REQUIREMENTS.md)** - متطلبات الأصول
-6. **[PRIVACY_POLICY_TEMPLATE.md](PRIVACY_POLICY_TEMPLATE.md)** - نموذج سياسة الخصوصية
+### 🌟 أدلة CodeMagic (مستحسن)
+1. **[CODEMAGIC_SETUP_GUIDE.md](CODEMAGIC_SETUP_GUIDE.md)** - دليل CodeMagic الشامل (ابدأ هنا!)
+2. **[codemagic.yaml](codemagic.yaml)** - ملف إعداد CI/CD
+3. **[export_certificates.sh](export_certificates.sh)** - مساعد تصدير Certificates
 
-### ⚡ رفع سريع
+### 📖 أدلة الرفع التقليدية
+4. **[START_HERE.md](START_HERE.md)** - دليل البدء العام
+5. **[IOS_DEPLOYMENT_QUICK_START.md](IOS_DEPLOYMENT_QUICK_START.md)** - دليل البدء السريع (محلي)
+6. **[APP_STORE_DEPLOYMENT.md](APP_STORE_DEPLOYMENT.md)** - دليل مفصل خطوة بخطوة
+7. **[APP_STORE_CHECKLIST.md](APP_STORE_CHECKLIST.md)** - قائمة التحقق الكاملة
+8. **[SCREENSHOTS_GUIDE.md](SCREENSHOTS_GUIDE.md)** - دليل إنشاء Screenshots
+9. **[APP_STORE_ASSETS_REQUIREMENTS.md](APP_STORE_ASSETS_REQUIREMENTS.md)** - متطلبات الأصول
+10. **[PRIVACY_POLICY_TEMPLATE.md](PRIVACY_POLICY_TEMPLATE.md)** - نموذج سياسة الخصوصية
+
+### ⚡ رفع سريع (CodeMagic - مستحسن)
+
+```bash
+# 1. اتبع دليل CODEMAGIC_SETUP_GUIDE.md لإعداد Certificates
+# 2. ادفع الكود إلى GitHub (تم بالفعل ✅)
+# 3. اربط المشروع في CodeMagic Dashboard
+# 4. شغل Build
+```
+
+### ⚡ رفع سريع (محلي)
 
 ```bash
 # 1. بناء التطبيق
@@ -71,26 +102,31 @@ open ios/Runner.xcworkspace
 # 3. في Xcode: Product → Archive → Distribute
 ```
 
-### ✅ ما تم إعداده
+### ✅ ما تم إعداده بالكامل
 
-- [x] Bundle ID تم تغييره إلى `com.mored.forsaneltaafy`
-- [x] أذونات الخصوصية تم إضافتها (Info.plist)
-- [x] ملف Podfile تم إنشاؤه
-- [x] ملفات Fastlane تم إعدادها
-- [x] سكريبت البناء تم إنشاؤه
-- [x] ExportOptions.plist تم إعداده
-- [x] الأيقونات موجودة
+- [x] Bundle ID: `com.mored.forsaneltaafyوظبط`
+- [x] Team ID: `84M47YB8XR`
+- [x] اسم التطبيق: مؤسسة فرسان التعافي
+- [x] أيقونات iPad كاملة (76x76, 152x152, 167x167)
+- [x] أذونات الخصوصية (Info.plist)
+- [x] ملف Podfile
+- [x] ملفات Fastlane
+- [x] ملف codemagic.yaml
+- [x] سكريبت البناء (build_ios.sh)
+- [x] ExportOptions.plist
+- [x] الكود على GitHub
 
-### ⚠️ ما يجب فعله
+### ⚠️ ما يجب فعله للنشر
 
-- [ ] تحديث Team ID في:
-  - `ios/fastlane/Appfile`
-  - `ios/ExportOptions.plist`
+- [ ] قراءة [CODEMAGIC_SETUP_GUIDE.md](CODEMAGIC_SETUP_GUIDE.md)
+- [ ] إنشاء Certificates & Provisioning Profiles
+- [ ] رفعها على CodeMagic
+- [ ] ربط App Store Connect API
+- [ ] إنشاء App في App Store Connect
 - [ ] إنشاء Screenshots (3-10 صور)
 - [ ] كتابة الوصف والكلمات المفتاحية
 - [ ] إعداد Privacy Policy URL
-- [ ] إنشاء App ID في Apple Developer Portal
-- [ ] إنشاء Provisioning Profile
+- [ ] تشغيل Build على CodeMagic
 
 ## 🏗️ بنية المشروع
 
@@ -208,4 +244,6 @@ open -a /Applications/Android\ Studio.app android/
 
 **جاهز للرفع على App Store!** 🎉
 
-ابدأ من هنا: [IOS_DEPLOYMENT_QUICK_START.md](IOS_DEPLOYMENT_QUICK_START.md)
+**الخطوة التالية**:
+- **للبناء على CodeMagic**: [CODEMAGIC_SETUP_GUIDE.md](CODEMAGIC_SETUP_GUIDE.md)
+- **للبناء المحلي**: [START_HERE.md](START_HERE.md) أو [IOS_DEPLOYMENT_QUICK_START.md](IOS_DEPLOYMENT_QUICK_START.md)
