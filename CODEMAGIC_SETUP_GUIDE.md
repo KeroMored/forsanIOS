@@ -18,7 +18,7 @@ CodeMagic مش لاقي certificates و provisioning profiles للـ code signin
 7. اختار **App** → اضغط **Continue**
 8. املأ البيانات:
    - **Description**: مؤسسة فرسان التعافي
-   - **Bundle ID**: اختار **Explicit** وحط `com.mored.forsaneltaafyوظبط`
+   - **Bundle ID**: اختار **Explicit** وحط `com.mored.forsaneltaafy`
 9. فعّل الـ Capabilities المطلوبة:
    - ✅ Push Notifications (لو محتاجها)
    - ✅ Associated Domains (لو محتاجها)
@@ -71,7 +71,7 @@ CodeMagic مش لاقي certificates و provisioning profiles للـ code signin
 3. اضغط **+** (Plus)
 4. اختار **App Store** (تحت Distribution)
 5. اضغط **Continue**
-6. اختار الـ App ID: `com.mored.forsaneltaafyوظبط`
+6. اختار الـ App ID: `com.mored.forsaneltaafy`
 7. اضغط **Continue**
 8. اختار الـ Distribution Certificate اللي عملته في الخطوة 2
 9. اضغط **Continue**
@@ -101,7 +101,7 @@ CodeMagic مش لاقي certificates و provisioning profiles للـ code signin
 #### رفع Provisioning Profile:
 1. في قسم **Provisioning profiles**:
    - ارفع ملف `.mobileprovision`
-   - تأكد إن الـ Bundle ID صحيح: `com.mored.forsaneltaafyوظبط`
+   - تأكد إن الـ Bundle ID صحيح: `com.mored.forsaneltaafy`
 
 #### إعداد App Store Connect Integration:
 1. روح **Team integrations** (في نفس الصفحة أو من القائمة)
@@ -154,7 +154,7 @@ base64 -i YourProfile.mobileprovision | pbcopy
    - **Build mode**: Release
    - **Code signing mode**: Automatic
    - **Distribution type**: App Store
-   - **Bundle identifier**: `com.mored.forsaneltaafyوظبط`
+   - **Bundle identifier**: `com.mored.forsaneltaafy`
 
 #### في قسم Build:
 - **Flutter version**: Stable
@@ -178,7 +178,7 @@ base64 -i YourProfile.mobileprovision | pbcopy
    - **Platforms**: iOS
    - **Name**: مؤسسة فرسان التعافي
    - **Primary Language**: Arabic
-   - **Bundle ID**: اختار `com.mored.forsaneltaafyوظبط`
+   - **Bundle ID**: اختار `com.mored.forsaneltaafy`
    - **SKU**: أي رقم فريد (مثلاً: FORSAN2026)
    - **User Access**: Full Access
 4. اضغط **Create**
@@ -222,7 +222,7 @@ base64 -i YourProfile.mobileprovision | pbcopy
 
 ### مشكلة: "Provisioning profile doesn't match bundle identifier"
 **الحل**: تأكد إن Bundle ID في:
-- `ios/Runner.xcodeproj/project.pbxproj` ← `com.mored.forsaneltaafyوظبط`
+- `ios/Runner.xcodeproj/project.pbxproj` ← `com.mored.forsaneltaafy`
 - Provisioning profile في Apple Developer
 - CodeMagic settings
 كلهم نفس الشيء بالضبط
@@ -244,7 +244,7 @@ base64 -i YourProfile.mobileprovision | pbcopy
 
 قبل كل build، تأكد من:
 
-1. ✅ **Bundle ID** في `ios/Runner.xcodeproj/project.pbxproj` = `com.mored.forsaneltaafyوظبط`
+1. ✅ **Bundle ID** في `ios/Runner.xcodeproj/project.pbxproj` = `com.mored.forsaneltaafy`
 2. ✅ **Team ID** في `ios/fastlane/Appfile` = `84M47YB8XR`
 3. ✅ **Version & Build Number** في `pubspec.yaml` محدثين
 4. ✅ **App Icons** كلها موجودة (76, 152, 167, etc.)

@@ -5,7 +5,7 @@
 ## 📱 معلومات التطبيق
 
 - **الاسم**: مؤسسة فرسان التعافي
-- **Bundle ID**: `com.mored.forsaneltaafyوظبط`
+- **Bundle ID**: `com.mored.forsaneltaafy`
 - **Team ID**: `84M47YB8XR`
 - **الإصدار**: 1.0.0 (Build 11)
 - **Min iOS**: 13.0
@@ -104,7 +104,7 @@ open ios/Runner.xcworkspace
 
 ### ✅ ما تم إعداده بالكامل
 
-- [x] Bundle ID: `com.mored.forsaneltaafyوظبط`
+- [x] Bundle ID: `com.mored.forsaneltaafy`
 - [x] Team ID: `84M47YB8XR`
 - [x] اسم التطبيق: مؤسسة فرسان التعافي
 - [x] أيقونات iPad كاملة (76x76, 152x152, 167x167)

@@ -13,7 +13,7 @@
 
 ### 1. معلومات التطبيق الأساسية
 - ✅ **اسم التطبيق**: مؤسسة فرسان التعافي (تم التغيير في جميع الملفات)
-- ✅ **Bundle ID**: `com.mored.forsaneltaafyوظبط` (تم الضبط في Xcode project)
+- ✅ **Bundle ID**: `com.mored.forsaneltaafy` (تم الضبط في Xcode project)
 - ✅ **Team ID**: `84M47YB8XR` (تم الضبط في جميع الملفات المطلوبة)
 - ✅ **Version**: 1.0.0 (Build 11)
 - ✅ **الأجهزة المدعومة**: iPhone + iPad فقط (تم تعطيل Mac Catalyst)
@@ -188,7 +188,7 @@
 في App Store Connect:
 1. My Apps → New App
 2. املأ المعلومات الأساسية
-3. Bundle ID: `com.mored.forsaneltaafyوظبط`
+3. Bundle ID: `com.mored.forsaneltaafy`
 4. اسم التطبيق: مؤسسة فرسان التعافي
 
 ### المرحلة 3: Build على CodeMagic (10 دقائق)
@@ -213,7 +213,7 @@
 ## 📞 معلومات الاتصال السريعة
 
 - **Repository**: https://github.com/KeroMored/forsanIOS
-- **Bundle ID**: com.mored.forsaneltaafyوظبط
+- **Bundle ID**: com.mored.forsaneltaafy
 - **Team ID**: 84M47YB8XR
 - **App Name**: مؤسسة فرسان التعافي
 

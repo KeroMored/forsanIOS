@@ -8,9 +8,9 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.mored.forsaneltaafyوظبط
+        bundle_identifier: com.mored.forsaneltaafy
       vars:
-        BUNDLE_ID: "com.mored.forsaneltaafyوظبط"
+        BUNDLE_ID: "com.mored.forsaneltaafy"
         APP_STORE_ID: YOUR_APP_STORE_ID # Replace with your App Store Connect ID
       flutter: stable
       xcode: latest

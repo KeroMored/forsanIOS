@@ -25,7 +25,7 @@
 ## ✅ ما تم إنجازه
 
 ### 1. الإعدادات التقنية (100% مكتمل)
-- ✅ Bundle ID تم تغييره إلى: `com.mored.forsaneltaafyوظبط`
+- ✅ Bundle ID تم تغييره إلى: `com.mored.forsaneltaafy`
 - ✅ Team ID تم تعيينه إلى: `84M47YB8XR`
 - ✅ اسم التطبيق: مؤسسة فرسان التعافي
 - ✅ أيقونات iPad (76x76, 152x152, 167x167) تم إضافتها
@@ -156,7 +156,7 @@ open ios/Runner.xcworkspace
 قبل الرفع، تأكد من:
 
 ### جاهز الآن ✅
-- [x] Bundle ID: `com.mored.forsaneltaafyوظبط`
+- [x] Bundle ID: `com.mored.forsaneltaafy`
 - [x] Team ID: `84M47YB8XR`
 - [x] اسم التطبيق: مؤسسة فرسان التعافي
 - [x] أيقونات iPad كاملة (76, 152, 167)
@@ -250,7 +250,7 @@ cd ios && pod install && cd ..
 
 **معلومات التطبيق**:
 - الاسم: مؤسسة فرسان التعافي
-- Bundle ID: com.mored.forsaneltaafyوظبط
+- Bundle ID: com.mored.forsaneltaafy
 - Team ID: 84M47YB8XR
 - Version: 1.0.0 (11)
 - GitHub: https://github.com/KeroMored/forsanIOS
