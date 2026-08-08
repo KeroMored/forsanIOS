@@ -283,7 +283,7 @@ class Conectustomontage extends StatelessWidget {
   }
 
   /// ================= SOCIAL ITEM =================
-  Widget _social(IconData icon, String url, Color color) {
+  Widget _social(FaIconData icon, String url, Color color) {
     return GestureDetector(
       onTap: () => _openUrl(url),
       child: Container(
@@ -295,7 +295,7 @@ class Conectustomontage extends StatelessWidget {
             BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 8),
           ],
         ),
-        child: Icon(icon, color: color, size: 28.sp),
+        child: FaIcon(icon, color: color, size: 28.sp),
       ),
     );
   }
